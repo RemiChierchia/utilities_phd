@@ -13,4 +13,4 @@ For the cmake of Optix you need to go inside the folder extracted and then in SD
 
 The nvcc command was not installed until I followed this link -> https://askubuntu.com/questions/885610/nvcc-version-command-says-nvcc-is-not-installed where you have to add it in the .bashrc file to make it visible.
 
-Once Optix was installed I followed the instructions on the instant-ngp repo and managed to build it; now time to test!
+Once Optix was installed I followed the instructions on the instant-ngp repo and managed to build it; now time to test! It worked fine.

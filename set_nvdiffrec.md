@@ -6,3 +6,4 @@ Probably nerfstudio is also downloading some additional libraries to make it wor
 
 Still tho, I cannot run the train. At first I got an error and followed this solution -> https://github.com/NVlabs/nvdiffrast/issues/92.
 Now I have another error and probably the previous fix didn't work.
+One strategy could be to follow -> https://nvlabs.github.io/nvdiffrast/#linux for nvdiffrast and running it on a Docker...TODO

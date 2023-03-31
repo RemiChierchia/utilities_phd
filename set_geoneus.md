@@ -31,3 +31,4 @@ Probably for the moment, pytorch3d is what I cannot install, I will try form the
 This solved it -> `conda install -c fvcore -c iopath -c conda-forge fvcore iopath`, and then I relaunched the command for pytorch3d.
 
 OK that worked, now for the dataset I had to change the dataset PATH in their .config files. I pointed at specific DTU/scan24 dataset, I tought I could select from the input command.
+It wasn't saving the checkpoints because of the .config files; it was supposed to do 300000 epochs and save each 10000.

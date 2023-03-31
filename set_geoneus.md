@@ -32,3 +32,11 @@ This solved it -> `conda install -c fvcore -c iopath -c conda-forge fvcore iopat
 
 OK that worked, now for the dataset I had to change the dataset PATH in their .config files. I pointed at specific DTU/scan24 dataset, I tought I could select from the input command.
 It wasn't saving the checkpoints because of the .config files; it was supposed to do 300000 epochs and save each 10000.
+
+I am missing some data it seems
+```
+RPly: Unable to open file
+[Open3D WARNING] Read PLY failed: unable to open file: data/epfl/_dense/gt_full.ply
+RPly: Unable to open file
+[Open3D WARNING] Read PLY failed: unable to open file: data/epfl/_dense/gt_center.ply
+```

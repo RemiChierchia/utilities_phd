@@ -1,4 +1,4 @@
-#Set nvdiffrec
+# Set nvdiffrec
 
 Basically follow nerfstufio -> https://docs.nerf.studio/en/latest/quickstart/installation.html.
 To install CUDA ToolKit I use conda `conda install -c "nvidia/label/cuda-11.7.0" cuda-toolkit`.

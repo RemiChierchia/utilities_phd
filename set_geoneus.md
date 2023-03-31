@@ -12,7 +12,7 @@ to be incompatible with the existing python installation in your environment:
 Specifications:
 
   - pytorch3d -> python[version='>=2.7,<2.8.0a0|>=3.11,<3.12.0a0|>=3.5,<3.6.0a0']
-
+  
 Your python: python=3.7
 
 The following specifications were found to be incompatible with your system:

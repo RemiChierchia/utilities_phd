@@ -26,3 +26,5 @@ Your installed version is: 2.35
 might be because of this? -> https://stackoverflow.com/questions/73337791/python-conda-determining-what-python-version-to-install
 
 Something that is already weird is thay they use pytorch3d, but build python=3.7 which is not specified in the pytorch3d repo.
+
+Probably for the moment, pytorch3d is what I cannot install, I will try form the official repo in another conda env.

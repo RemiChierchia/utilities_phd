@@ -13,3 +13,5 @@ Follow the instructions in run_job.q file to `sbatch` a job.
 Then `sbatch -A your_code_from_get_project_code run_job.q`
 
 To see the job running or in the queue `squeue -u my_ident` or `slurmtop -u my_ident`
+
+`scancel job_id` to cancel a job

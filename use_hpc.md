@@ -44,3 +44,7 @@ python exp_runner.py --mode validate_mesh --conf ./confs/womask.conf --case DTU/
 With `#SBATCH` you can set the settings of the `sinteractive` node, so you can just run the command `sbatch -A your_code_from_get_project_code run_job.q`.
 When using a `conda` environment, you need firstly to explicit `--prefix` when creating it to install the environment in the local (on `/scratch2/my_ident/<current_folder>`) current folder.
 Then it is important to use `source ~/.bashrc` before activating the environment so the node knows where to find the installed libraries. Then the conda environment can be correctly activated.
+
+## Mount Remote Folder
+
+`sshfs chi215@bracewell.hpc.csiro.au:/scratch2/chi215/<folder_to_mount> /home/chi215/<name_to_mount>`

@@ -80,5 +80,5 @@ pip install <>
 conda install <>
 ```
 
-It is important also to check with `module list` or `conda list` the modules loaded, sometimes might have other CUDA modules loaded which crash if trying to install a custom version; otherwise try to load already existing modules. For example if needed to build from source code you might need to load `gcc` and `cmake` modules.
+It is important also to check with `module list` or `conda list` the modules loaded, sometimes might have other CUDA modules loaded which crash when trying to call CUDA; otherwise try to load already existing modules. For example if needed to build from source code you might need to load `gcc` and `cmake` modules.
 

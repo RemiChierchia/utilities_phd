@@ -65,7 +65,7 @@ conda deactivate
 # Create conda enviroment
 mkdir ./CONDA_PKGS/
 export CONDA_PKGS_DIRS=${CFPP_ROOT_DIR}/CONDA_PKGS/
-conda create python=3.8 --prefix ./CONDA_ENV/
+conda create python=<VERSION> --prefix ./CONDA_ENV/
 conda activate ./CONDA_ENV/
 
 # Load more Modules

@@ -54,44 +54,30 @@ Then it is important to use `source ~/.bashrc` before activating the environment
 
 Refer to this `.sh`
 ```
-# set root directory
+# Set root directory
 CFPP_ROOT_DIR=<CFPP_ROOT_DIR>
 cd CFPP_ROOT_DIR
 
-# load modules
+# Load modules
 module load miniconda3/4.9.2
 conda deactivate
 
-# create conda enviroment
+# Create conda enviroment
 mkdir ./CONDA_PKGS/
 export CONDA_PKGS_DIRS=${CFPP_ROOT_DIR}/CONDA_PKGS/
 conda create python=3.8 --prefix ./CONDA_ENV/
 conda activate ./CONDA_ENV/
 
-# Pykeops and geomloss
-module load gcc/9.3.0
-module load cmake/3.20.2
-module load cuda/11.1.1 
-conda install pytorch torchvision torchaudio cudatoolkit=11.1 -c pytorch -c nvidia
-pip install pykeops
-mkdir ${CFPP_ROOT_DIR}/PYKEOPS/
-pip install git+https://github.com/jeanfeydy/geomloss.git@master#egg=geomloss[full]
+# Load more Modules
+module load <GCC>
+module load <CMAKE>
+module load <CUDA>
 
-# Install igl
-conda install -c conda-forge igl
+# Install pip stuff
+pip install <>
 
-# Install Hydra, trimesh and nibabel
-pip install hydra-core --upgrade
-pip install trimesh nibabel vtk
-pip install networkx
-
-# install ants
-pip install antspyx
-
-# install pytorch3d
-conda install -c fvcore -c iopath -c conda-forge fvcore iopath
-conda install -c bottler nvidiacub
-conda install pytorch3d -c pytorch3d
+# Install conda stuff
+conda install <>
 ```
 
 It is important also to check with `module list` or `conda list` the modules loaded, sometimes might have other CUDA modules loaded which crash if trying to install a custom version; otherwise try to load already existing modules. For example if needed to build from source code you might need to load `gcc` and `cmake` modules.

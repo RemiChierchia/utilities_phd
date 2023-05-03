@@ -64,7 +64,7 @@ conda deactivate
 
 # Create conda enviroment
 mkdir ./CONDA_PKGS/
-export CONDA_PKGS_DIRS=${CFPP_ROOT_DIR}/CONDA_PKGS/
+export CONDA_PKGS_DIRS=${CFPP_ROOT_DIR}/CONDA_PKGS/ #important step to do also after each conda activation, else it installs in the home dir
 conda create python=<VERSION> --prefix ./CONDA_ENV/
 conda activate ./CONDA_ENV/
 

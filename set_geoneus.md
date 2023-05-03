@@ -40,3 +40,5 @@ RPly: Unable to open file
 RPly: Unable to open file
 [Open3D WARNING] Read PLY failed: unable to open file: data/epfl/_dense/gt_center.ply
 ```
+## On Bracewell
+I use CUDA 11.3 given that they use pytorch 1.11

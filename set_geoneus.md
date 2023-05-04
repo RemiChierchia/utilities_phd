@@ -44,4 +44,4 @@ RPly: Unable to open file
 I use CUDA 11.3 given that they use pytorch 1.11
 
 ## Attention to Memory
-It requires ~60GB
+It requires ~60GB with out custom data

@@ -87,3 +87,7 @@ It is important also to check with `module list` or `conda list` the modules loa
 
 `ssh-copy-id id@server` and insert password
 
+## Use non-server HPCs (sleipnir, shazza, ...)
+`screen -S <process_name>` to create a virtual screen to keep the job running when disconnecting from ssh
+Then activate your conda env etc like normally and run your script.
+To exit the screen bash do `ctrl+A ctrl+D` in sequence.

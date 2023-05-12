@@ -82,3 +82,8 @@ conda install <>
 
 It is important also to check with `module list` or `conda list` the modules loaded, sometimes might have other CUDA modules loaded which crash when trying to call CUDA libs; otherwise try to load already existing modules. For example if needed to build from source code you might need to load `gcc` and `cmake` modules.
 
+## Set SSH key
+`ssh-keygen -t rsa -b 2048` if you don't have a key yet
+
+`ssh-copy-id id@server` and insert password
+

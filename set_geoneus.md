@@ -25,7 +25,7 @@ Your installed version is: 2.35
 ```
 might be because of this? -> https://stackoverflow.com/questions/73337791/python-conda-determining-what-python-version-to-install
 
-`__glibc==x.xx=0` conflict is due to cuda-toolkit version and gcc -> update gcc
+`__glibc==x.xx=0` conflict is due to cuda-toolkit=11.3 version and gcc probably or something with conda, however running `conda install -c conda-forge cudatoolkit=11.3` it worked. It doesen't install nvcc and other libraries but to run pytorch seems sufficient.
 
 Something that is already weird is thay they use pytorch3d, but build python=3.7 which is not specified in the pytorch3d repo.
 

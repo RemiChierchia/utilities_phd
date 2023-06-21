@@ -44,6 +44,24 @@ RPly: Unable to open file
 ```
 ## On Bracewell
 I use CUDA 11.3 given that they use pytorch 1.11
+**Eample fast setup**
+```
+# Create conda enviroment
+export CONDA_CONFIG=/home/chi215/.condarc #if you have the issue with conda cache
+
+mkdir ./CONDA_PKGS/
+export CONDA_PKGS_DIRS=./CONDA_PKGS/ #important step to do also after each conda activation, else it installs in the home dir
+conda create python=3.7 --prefix ./CONDA_ENV/
+conda activate ./CONDA_ENV/
+
+module load cuda/11.3.0 
+conda install pytorch==1.11.0 torchvision==0.12.0 cudatoolkit=11.3 -c pytorch  
+conda install -c fvcore -c iopath -c conda-forge fvcore iopath 
+conda install -c bottler nvidiacub  
+conda install pytorch3d -c pytorch3d
+pip install -r requirements.txt  
+pip install tensorboard
+```
 
 ## Attention to Memory
 It requires ~60GB with out custom data
